@@ -8,7 +8,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/environment', (req, res, next) => {
-  res.send(`This is the ${NODE_ENV} environment`)
+  res.send(`This is the ${NODE_ENV} environment. I'm listening on port ${PORT}`)
 })
 
 if (module === require.main) {

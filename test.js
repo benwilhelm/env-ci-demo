@@ -12,6 +12,6 @@ describe('GET /', () => {
 describe('GET /environment', () => {
   it('should tell us the environment', async () => {
     const res = await request(app).get('/environment').expect(200)
-    expect(res.text).to.equal('This is the development environment')
+    expect(res.text).to.match(/This is the development environment/)
   })
 })
