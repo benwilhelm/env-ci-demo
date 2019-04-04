@@ -1,0 +1,20 @@
+{
+  "name": "env-ci-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "mocha -w test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2"
+  }
+}
